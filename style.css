@@ -1,0 +1,248 @@
+/* General styling */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f5f7fa;
+  color: #333;
+ 
+}
+
+/* Header */
+
+header {
+  background-color: #0f172a;
+  color: white;
+  text-align: center;
+  padding: 50px 20px 30px ;
+}
+
+header h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  color: #cbd5e1;
+}
+
+/* Navigation */
+
+nav {
+  margin: 25px 0 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 12px;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* Main content */
+
+main {
+  width: 100%;
+  padding: 0 20px;
+  max-width: 1100px;
+  margin: 40px auto;
+}
+
+section {
+  background-color: white;
+  padding: 35px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+section h2 {
+  margin-bottom: 25px;
+  color: #0f172a;
+}
+
+
+/* About Me */
+
+#about {
+  text-align: center;
+  
+}
+
+#about h2 {
+  color: #0f172a;
+  font-size: 30px;
+  margin-bottom: 35px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  max-width: 900px;
+  margin: 0 auto;
+  
+}
+
+.profile-img {
+  width: 190px;
+  height: 220px;
+  border-radius: 20px;
+  object-fit: contain;  
+  border: 4px solid #e0f2fe;
+  background-color: #f0f9ff;
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.15);
+  flex-shrink: 0;
+}
+
+.about-content p {
+  max-width: 480px;
+  margin: 0;
+  font-size: 17px;
+  line-height: 1.8;
+  text-align: left;
+  color: #475569;
+}
+
+/* learning Goals */
+
+#goals {
+  padding: 35px;
+}
+
+#goals h2 {
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+#goals ul {
+  padding-left: 25px;
+}
+
+#goals li {
+  margin-bottom: 14px;
+  color: #475569;
+}
+
+/* Tech Articles */
+
+article {
+  background-color: #f8fafc;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-left: 5px solid #38bdf8;
+  border-radius: 5px;
+  
+}
+
+article h3 {
+  margin-bottom: 8px;
+  color:#475569;
+}
+
+/* Contact */
+
+#contact {
+  text-align: center;
+  background-color: #0f172a;
+  color: white;
+  border-top: 4px solid #38bdf8;
+  padding: 35px 30px;
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+#contact h2 {
+  color: white;
+  margin-bottom: 15px;
+  
+}
+
+#contact > p:first-of-type {
+  max-width: 600px;
+  margin: 0 auto 25px;
+  color: #cbd5e1;
+  font-size: 16px;
+ 
+}
+
+#contact p {
+  margin: 12px;
+}
+
+#contact strong {
+  color: #38bdf8;
+}
+#contact a{
+    color: #ffffff;
+    text-decoration: none;    
+    margin-left: 5px;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+    color: #38bdf8;
+}
+
+/* Footer */
+
+footer {
+  background-color: #0f172a;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+footer a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 700px) {
+
+  header h1 {
+    font-size: 32px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 5px 8px;
+  }
+
+  .about-content {
+    text-align: center;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .profile-img {
+    width: 160px;
+    height: 160px;
+  }
+  .about-content p {
+    text-align: center;
+    font-size: 16px;
+  }
+}
